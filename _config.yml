@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 诗海的个人博客
+title: 诗海
 subtitle: 我们越谦卑，就离真理越近
 description: 努力成为专业的程序员
 keywords:
@@ -46,11 +46,11 @@ relative_link: false
 future: true
 highlight:
   enable: true
-  line_number: true
+  line_number: false
   auto_detect: false
   tab_replace: ''
   wrap: true
-  hljs: false
+  hljs: true
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
@@ -102,3 +102,29 @@ deploy:
   type: git
   repo: git@zhaoshihan.me:BlogGit
   branch: master
+
+#添加站内搜索按钮
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
+
+# 这里使用了npm install的hexo-symbols-count-time工具，
+# 具体说明参见：https://github.com/theme-next/hexo-symbols-count-time
+symbols_count_time:
+  symbols: true # 当前字数显示（文章开头）
+  time: true # 当前时间显示（文章开头）
+  total_symbols: false # 总字数显示（文章下方）
+  total_time: false # 总时间显示（文章下方）
+  exclude_codeblock: true
+  awl: 4
+  wpm: 275
+
+# 使用了npm install的hexo-excerpt工具
+# 具体说明参见：https://github.com/chekun/hexo-excerpt
+excerpt:
+  depth: 10
+  excerpt_excludes: []
+  more_excludes: []
+  hideWholePostExcerpts: true
