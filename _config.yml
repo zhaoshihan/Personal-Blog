@@ -124,7 +124,7 @@ symbols_count_time:
 # 使用了npm install的hexo-excerpt工具
 # 具体说明参见：https://github.com/chekun/hexo-excerpt
 excerpt:
-  depth: 10
+  depth: 1
   excerpt_excludes: []
   more_excludes: []
   hideWholePostExcerpts: true
