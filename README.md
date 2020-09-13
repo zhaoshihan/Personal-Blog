@@ -1,6 +1,4 @@
-# 个人博客
+# 个人博客源码部分
 
-这是一个个人博客的源码，与我的[个人博客](https://zhaoshihan.me/)保持同步。
-
-远端暂时部署在个人的服务器上，以后可能会迁移到Github上来。
+目前已经完成了GitHub的迁移工作，新的网址是[https://zhaoshihan.github.io/](https://zhaoshihan.github.io/)
 

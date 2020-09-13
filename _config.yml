@@ -97,10 +97,10 @@ theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
-## 这里使用绝对路径 user@host 相当于/home/git/BlogGit/
+## 原始设置 repo: git@zhaoshihan.me:BlogGit 这里使用绝对路径 user@host 相当于/home/git/BlogGit/
 deploy:
   type: git
-  repo: git@zhaoshihan.me:BlogGit
+  repo: git@github.com:zhaoshihan/zhaoshihan.github.io.git
   branch: master
 
 #添加站内搜索按钮
