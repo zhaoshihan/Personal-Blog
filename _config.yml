@@ -13,9 +13,26 @@ timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+# 这里使用npm install的hexo-abbrlink工具
+# 具体参见：https://github.com/Rozbo/hexo-abbrlink
 url: http://zhaoshihan.me
 root: /
-permalink: :year/:month/:day/:title/
+#permalink: :year/:month/:day/:title/
+permalink: posts/:abbrlink/
+# abbrlink config
+abbrlink:
+  alg: crc16      #support crc16(default) and crc32
+  rep: dec       #support dec(default) and hex
+  drafts: true   #(true)Process draft,(false)Do not process draft. false(default)
+  # Generate categories from directory-tree
+  # depth: the max_depth of directory-tree you want to generate, should > 0
+  auto_category:
+    enable: true  #true(default)
+    depth: 3      #3(default)
+    over_write: false
+  auto_title: false #enable auto title, it can auto fill the title by path
+  auto_date: false #enable auto date, it can auto fill the date by time today
+  force: false #enable force mode,in this mode, the plugin will ignore the cache, and calc the abbrlink for every post even it already had abbrlink.
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
