@@ -347,9 +347,9 @@ codeblock:
   # Code Highlight theme
   # See: https://github.com/highlightjs/highlight.js/tree/master/src/styles
   theme:
-    light: github
+    light: xcode
     dark: darcula
-
+    
   # Add copy button on codeblock
   copy_button:
     enable: true
