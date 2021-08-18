@@ -346,17 +346,18 @@ custom_logo: #/uploads/custom-logo.jpg
 codeblock:
   # Code Highlight theme
   # See: https://github.com/highlightjs/highlight.js/tree/master/src/styles
+  # 代码效果参见: https://theme-next.js.org/highlight/
   theme:
     light: xcode
     dark: darcula
-    
+
   # Add copy button on codeblock
   copy_button:
     enable: true
     # Show text copy result.
     show_result: true
     # Available values: default | flat | mac
-    style: default
+    style: mac
 
 back2top:
   enable: true
